@@ -18,6 +18,15 @@ picture {
     display: block;
 }
 
+ ul{
+    list-style: none;
+ }
+
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+
 .sr-only {
     position: absolute; 
     width: 1px;
@@ -32,6 +41,7 @@ picture {
 
 .header-box{
     border: 1px solid var(--white);
+    position: absolute;
 }
 
 h1{
@@ -63,12 +73,14 @@ p{
 }
 
 
+
 @media screen and (max-width: 48em){
    header{
     background-image: url('images/mobile/image-hero.jpg');
     background-repeat: no-repeat;
     background-position: top top;
     background-size: cover;
+    height: 400px;
     padding: 20px;
    
    }
@@ -115,9 +127,9 @@ p{
    }
 
    .header-box {
-    margin-block: 50px;
-    margin-inline: 10px;
-    padding: 20px;
+    margin-block: 70px;
+    margin-inline: 50px;
+    padding: 30px;
    }
 
    h1{
@@ -150,5 +162,57 @@ p{
     .our_creation{
         font-size: 3rem;
         text-align: center;
+    }
+}
+
+
+@media screen and (min-width: 48em){
+    .toggle{
+        display: none;
+    }
+
+    header{
+        background-image: url(images/desktop/image-hero.jpg);
+        background-repeat: no-repeat; 
+        display: flex;
+        height: 400px;
+        justify-content: space-evenly;
+        padding: 20px 0 0 15px;
+     
+
+    }
+
+    .logo{
+        padding-top: 7px;
+    }
+
+    .header-box{
+        left: 20%;
+        right: 50%;
+        top: 30%;
+    }
+
+
+
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    
+
+    }
+
+    
+
+    h1{
+        padding: 30px;
+        text-align: center;
+    }
+
+
+
+    .interactive_container{
+        margin-top: 40px;
     }
 }
