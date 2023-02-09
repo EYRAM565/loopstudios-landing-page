@@ -12,17 +12,26 @@
     --fontsize: 15px;
 }
 
-img,
-picture {
+img,picture {
     max-width: 100%;
     display: block;
 }
 
+picture{
+    position: relative;
+}
+
+.text_overlay{
+    position: absolute;
+}
+
+
+
  ul{
     list-style: none;
- }
+  }
 
-a{
+ a{
     color: var(--white);
     text-decoration: none;
 }
@@ -70,6 +79,19 @@ p{
     color: var(--black);
     font-family: var(--fontfam2);
     font-family: 300;
+}
+
+.txt{
+    border: 1px solid var(--black);
+    text-align: center;
+    width: 100px;
+}
+
+
+footer{
+    background-color: var(--black);
+    display: flex;
+    flex: 1;
 }
 
 
@@ -163,12 +185,22 @@ p{
         font-size: 3rem;
         text-align: center;
     }
+
+    .desktop__images{
+        display: none;
+    }
 }
 
 
 @media screen and (min-width: 48em){
     .toggle{
         display: none;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
     }
 
     header{
@@ -203,16 +235,57 @@ p{
 
     }
 
-    
-
     h1{
         padding: 30px;
         text-align: center;
     }
 
-
-
     .interactive_container{
         margin-top: 40px;
+        
     }
+
+    .mobile__images{
+        display: none;
+    }
+
+    .txt{
+        position: absolute;
+       left: 80%;
+       top: 205%;
+
+    }
+
+    .lf{
+        background-color: var(--white);
+        box-shadow: 0 0 rgba(17, 16, 16, 0.04);
+        position: absolute;
+        left: 39%;
+        padding: 20px;
+        top: 130%;
+        width: 600px;
+    }
+
+    .lf h2,p{
+        text-align: center;
+    }
+
+    .lf h2{
+        font-family: var(--fontfam2);
+        font-size: 3em;
+        font-weight: 300;
+        line-height: 60px;
+    }
+
+    .our_creation{
+        text-align: left;
+    }
+
+    .desktop__images{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    
 }
