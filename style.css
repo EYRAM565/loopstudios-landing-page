@@ -318,14 +318,18 @@ small{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 10px;
-        height: auto;
-        
         margin-block: 80px;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 1200px;
-        width: 100%;
+        margin-left: 60px;
+        margin-right: 60px;
+        
+       
 
+    }
+
+    .desktop__images img{
+        height: auto;
+        width: 100%;
+      
     }
 
     footer{
