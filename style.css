@@ -12,6 +12,10 @@
     --fontsize: 15px;
 }
 
+.logo{
+    font-family: var(--fontfam1);
+}
+
 img,picture {
     max-width: 100%;
     display: block;
@@ -33,6 +37,7 @@ picture{
 
  a{
     color: var(--white);
+    font-family: var(--fontfam1);
     text-decoration: none;
 }
 
@@ -123,6 +128,10 @@ small{
 
    .logo{
     width: 150px;
+   }
+
+   a {
+    font-size: .8rem;
    }
 
    .primary-navigation{
@@ -234,6 +243,11 @@ small{
         min-height: 100vh;
     }
 
+    a{
+        font-size: .9rem;
+        font-weight: 400;
+    }
+
     header{
         background-image: url(images/desktop/image-hero.jpg);
         background-repeat: no-repeat; 
@@ -311,7 +325,8 @@ small{
     }
 
     .our_creation{
-        text-align: left;
+        font-size: 3rem;
+        /* text-align: left; */
     }
 
     .desktop__images{
