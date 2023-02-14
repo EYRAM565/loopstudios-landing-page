@@ -26,7 +26,9 @@ picture{
 }
 
 .text_overlay{
+    font-family: var(--fontfam2);
     position: absolute;
+    text-transform: uppercase;
 }
 
 
@@ -38,6 +40,7 @@ picture{
  a{
     color: var(--white);
     font-family: var(--fontfam1);
+    font-weight: 400;
     text-decoration: none;
 }
 
@@ -88,15 +91,19 @@ p{
 
 .txt{
     border: 1px solid var(--black);
+    font-family: var(--fontfam2);
+    font-size: 1.2rem;
+    padding: 10px;
     text-align: center;
-    width: 100px;
+    width: 120px;
 }
 
 .text_overlay{
     color: var(--white);
-    font-family: var(--fontfam1);
-    font-weight: 400;
+    font-family: var(--fontfam2);
+    font-weight: 300;
 }
+
 
 
 footer{
@@ -127,12 +134,14 @@ small{
    }
 
    .logo{
-    width: 150px;
+     width: 150px;
    }
 
+
    a {
-    font-size: .8rem;
-   }
+     font-size: 1rem;
+    
+    }
 
    .primary-navigation{
         position: fixed;
@@ -209,6 +218,29 @@ small{
         text-align: center;
     }
 
+    .mobile__images{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .mobile__images img{
+        margin-bottom: 20px;
+        width: 500px;
+       
+    }
+
+    .text_overlay{
+        font-size: 1.4rem;
+        line-height: 30px;
+        padding: 10px 0 0 20px;
+        width: 150px;
+    }
+
+    .txt{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     footer{
         display: flex;
         flex-direction: column;
@@ -219,10 +251,29 @@ small{
         
     }
 
+    .logo1{
+        padding: 15px 0;
+        width: 140px;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+    }
+
     .loopstudio_sm_icons{
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    .loopstudio_sm_icons img{
+        height: auto;
+        width: 20px;
     }
 
    
@@ -289,6 +340,7 @@ small{
         margin-block: 50px;
         margin-left: 70px;
         
+        
     }
 
     .mobile__images{
@@ -298,7 +350,8 @@ small{
     .txt{
         position: absolute;
        left: 80%;
-       top: 205%;
+       top: 220%;
+      
 
     }
 
@@ -309,31 +362,38 @@ small{
         left: 39%;
         padding: 20px;
         top: 130%;
-        width: 600px;
+        width: 700px;
         z-index: 100;
     }
 
-    .lf h2,p{
-        text-align: center;
-    }
-
-    .lf h2{
+   
+    h2{
         font-family: var(--fontfam2);
         font-size: 3em;
         font-weight: 300;
         line-height: 60px;
+        width: 500px;
+       
     }
+
+    p{
+        font-size: 1rem;
+     
+    }
+
+
 
     .our_creation{
         font-size: 3rem;
-        /* text-align: left; */
+        margin-left: 30px;
+        text-align: left;
     }
 
     .desktop__images{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 10px;
-        margin-block: 80px;
+        margin-block: 50px;
         margin-left: 60px;
         margin-right: 60px;
         
