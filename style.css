@@ -351,6 +351,7 @@ small{
         position: absolute;
        left: 80%;
        top: 220%;
+       z-index: 1000;
       
 
     }
@@ -363,7 +364,7 @@ small{
         padding: 20px;
         top: 130%;
         width: 700px;
-        z-index: 100;
+        z-index: 1000;
     }
 
    
@@ -396,7 +397,7 @@ small{
         margin-block: 50px;
         margin-left: 60px;
         margin-right: 60px;
-        
+       
        
 
     }
@@ -404,7 +405,15 @@ small{
     .desktop__images img{
         height: auto;
         width: 100%;
+
       
+    }
+
+    .text_overlay{
+        font-size: 1.5rem;
+        padding-top: 340px;
+        padding-left: 10px;
+        z-index: 1000px;
     }
 
     footer{
@@ -412,6 +421,9 @@ small{
       justify-content: space-between;
     
        
+    }
+    .logo1{
+        padding:0 0 15px 40px;
     }
 
     .loopstudio_sm_icons{
