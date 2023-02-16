@@ -411,9 +411,64 @@ small{
 
     .text_overlay{
         font-size: 1.5rem;
-        padding-top: 340px;
-        padding-left: 10px;
-        z-index: 1000px;
+        
+    }
+
+    .td1{
+        position: absolute;
+        line-height: 30px;
+        left: 6%;
+        top: 37%;
+    }
+
+    .td2{
+        position: absolute;
+        line-height: 30px;
+        left: 29%;
+        top: 37%;
+    }
+
+    .td3{
+        position: absolute;
+        line-height: 30px;
+        left: 52%;
+        top: 37%;
+    }
+
+    .td4{
+        position: absolute;
+        line-height: 30px;
+        left: 75%;
+        top: 37%;
+    }
+
+
+    .td5{
+        position: absolute;
+        line-height: 30px;
+        left: 6%;
+        top: 87%;
+    }
+
+    .td6{
+        position: absolute;
+        line-height: 30px;
+        left: 29%;
+        top: 87%;
+    }
+
+    .td7{
+        position: absolute;
+        line-height: 30px;
+        left: 52%;
+        top: 87%;
+    }
+
+    .td8{
+        position: absolute;
+        line-height: 30px;
+        left: 75%;
+        top: 87%;
     }
 
     footer{
