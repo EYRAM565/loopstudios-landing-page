@@ -130,11 +130,19 @@ small{
     background-size: cover;
     height: 400px;
     padding: 20px;
+    
    
    }
+   
+
+   
+   
 
    .logo{
      width: 150px;
+     position: absolute;
+     z-index: 1000;
+     
    }
 
 
@@ -144,15 +152,16 @@ small{
     }
 
    .primary-navigation{
-        position: fixed;
-        z-index: 1000;
-        inset: 0 0 0 30%;
+       background-color: var(--black);
+        position: absolute;
+        /* z-index: 1000; */
+        inset: 0 0 0 0;
         list-style: none;
-        padding: min(20rem, 15vh) 2rem;
+        padding: min(30rem) 1rem;
         margin: 0;
         display: flex;
         flex-direction: column;
-        transform: translateX(100%);
+        transform: translate(100%);
         transition: transform 500ms ease-in-out;
     }
 
