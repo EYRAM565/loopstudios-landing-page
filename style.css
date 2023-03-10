@@ -89,6 +89,19 @@ footer{
     
     }
 
+    .mobile__images{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    .m_i{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
  
    
     .desktop__images{
@@ -118,7 +131,16 @@ footer{
     .logo{
         padding-top: 7px;
     }
+
+    .desktop__images{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
      
+    .deep{
+        display: flex;
+        flex-direction: column;
+    }
 
    
    
