@@ -14,9 +14,7 @@
      
 }
 
-.logo{
-    font-family: var(--fontfam1);
-}
+
 
 img,picture {
     max-width: 100%;
@@ -25,12 +23,6 @@ img,picture {
 
 
 
-.text_overlay{
-    font-family: var(--fontfam2);
-    /* position: absolute; */
-    text-transform: uppercase;
-}
-
 
 
  ul{
@@ -38,9 +30,7 @@ img,picture {
   }
 
  a{
-    color: var(--white);
-    font-family: var(--fontfam1);
-    font-weight: 400;
+   
     text-decoration: none;
 }
 
@@ -56,24 +46,6 @@ img,picture {
     border: 0;
 }
 
-.header-box{
-    border: 1px solid var(--white);
-   
-}
-
-h1{
-    color: var(--white);
-}
-
-h2{
-    color: var(--black);
-    font-family: var(--fontfam1);
-    font-weight: 400;
-    line-height: 40px;
-    text-transform: uppercase;
-
-    
-}
 
 p{
     color: var(--DarkGray);
@@ -89,35 +61,14 @@ p{
     font-family: 300;
 }
 
-.txt{
-    border: 1px solid var(--black);
-    font-family: var(--fontfam2);
-    font-size: 1.2rem;
-    padding: 10px;
-    text-align: center;
-    width: 120px;
-}
 
-.text_overlay{
-    color: var(--white);
-    font-family: var(--fontfam2);
-    font-weight: 300;
-}
+
+
 
 
 
 footer{
     background-color: var(--black);
-    display: flex;
-    flex: 1;
-    padding: 50px;
-}
-
-small{
-    color: var(--DarkGray);
-    font-family: var(--fontfam2);
-    font-weight: 300;
-    font-size: .9rem;
 }
 
 
@@ -125,183 +76,24 @@ small{
 
 
 
-.deep:hover .text_overlay{
-    cursor: pointer;
-    color: var(--black);
-    
-}
 
-.deep:hover .img{
-    cursor: pointer;
-    opacity: .7;
-}
 
-a {
-    padding-bottom: 5px;
-}
 
-a:hover {
-    border-bottom: 1px solid var(--white);
-    cursor: pointer;
-   
-}
-
-.icon img{
-    padding-bottom: 10px;
-}
-.icon:hover img{
-    border-bottom: .5px solid var(--white);
-    cursor: pointer;
-    
-}
 
 
 @media screen and (max-width: 48em){
-   header{
-    background-image: url('images/mobile/image-hero.jpg');
-    background-repeat: no-repeat;
-    background-position: top top;
-    background-size: cover;
-    height: 400px;
-    padding: 20px;
- }
+ 
    
-
-   .logo{
-     width: 150px;
-     position: absolute;
-     z-index: 1000;
-     
-   }
-
-
    a {
      font-size: 1rem;
     
     }
 
-   .primary-navigation{
-       background-color: var(--black);
-        position: absolute;
-        inset: 0 0 0 0;
-        list-style: none;
-        height: 650px;
-        padding: 5em;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        transform: translateX(100%);
-        transition: transform 500ms ease-in-out;
-    }
-
-    .primary-navigation[data-visible="true"] {
-        transform: translateX(0);
-    }
-    
-
-   .toggle{
-    position: absolute;
-    z-index: 2000;
-    right: 1rem;
-    top: 1.8rem;
-    background: transparent;
-    background-image: url('images/icon-hamburger.svg');
-    background-repeat: no-repeat;
-    width: 2rem;
-    aspect-ratio: 1;
-    border: 0;
-   }
-
-   .toggle[aria-expanded="true"]{
-    background-image: url('images/icon-close.svg');
-
-   }
-
-   .header-box {
-    margin-block: 70px;
-    margin-inline: 50px;
-    padding: 30px;
-   }
-
-   h1{
-    
-    font-family: var(--fontfam2);
-    font-size: 2rem;
-    font-weight: 300;
-    line-height: 40px;
-   }
-
-   .interactive_container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-block: 30px;
-    margin-inline: 20px;
-   }
-
-    h2{
-        font-size: 2rem;
-        font-family: var(--fontfam1);
-        text-align: center;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-
-    .our_creation{
-        font-size: 3rem;
-        text-align: center;
-    }
-
-
-   
-
-    .txt{
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-
-        
-    }
-
-    .logo1{
-        padding: 15px 0;
-        width: 140px;
-    }
-
-    ul{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 12px;
-    }
-
-    .loopstudio_sm_icons{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
-        padding: 20px 0;
-    }
-
-    .loopstudio_sm_icons img{
-        height: auto;
-        width: 20px;
-    }
-
+ 
    
     .desktop__images{
         display: none;
-    }
+    } 
 }
 
 
@@ -310,16 +102,7 @@ a:hover {
         display: none;
     }
 
-    body{
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
-
-    a{
-        font-size: .9rem;
-        font-weight: 400;
-    }
+    
 
     header{
         background-image: url(images/desktop/image-hero.jpg);
@@ -337,68 +120,21 @@ a:hover {
     }
      
 
-    picture{
-        position: relative;
-    }
+   
    
 
-    .header-box{
-        position: absolute;
-        left: 21%;
-        top: 30%;
-        /* transform: translateX( 5%, 5%); */
-        /* position: absolute;
-        left: 20%;
-        right: 50%;
-        top: 50%; */
-    }
 
 
-
-    ul{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
     
 
-    }
-
-    h1{
-        padding: 30px;
-        text-align: center;
-    }
-
-    .interactive_container{
-        margin-block: 50px;
-        margin-left: 70px;
-        
-        
-    }
 
     .mobile__images{
         display: none;
     }
 
-    .txt{
-        position: absolute;
-       left: 80%;
-       top: 300%;
-       z-index: 1000;
-      
+   
 
-    }
-
-    .lf{
-        background-color: var(--white);
-        box-shadow: 0 0 rgba(17, 16, 16, 0.04);
-        position: absolute;
-        left: 42%;
-        padding: 20px;
-        top: 180%;
-        width: 700px;
-        z-index: 1000;
-    }
+   
 
    
     h2{
@@ -435,74 +171,11 @@ a:hover {
 
     }
 
-    .desktop__images img{
-        height: auto;
-        width: 100%;
+   
 
-      
-    }
+   
 
-    .text_overlay{
-        font-size: 1.5rem;
-        
-    }
-
-    .td1{
-        position: absolute;
-        line-height: 30px;
-        left: 6%;
-        top: 37%;
-    }
-
-    .td2{
-        position: absolute;
-        line-height: 30px;
-        left: 29%;
-        top: 37%;
-    }
-
-    .td3{
-        position: absolute;
-        line-height: 30px;
-        left: 52%;
-        top: 37%;
-    }
-
-    .td4{
-        position: absolute;
-        line-height: 30px;
-        left: 75%;
-        top: 37%;
-    }
-
-
-    .td5{
-        position: absolute;
-        line-height: 30px;
-        left: 6%;
-        top: 87%;
-    }
-
-    .td6{
-        position: absolute;
-        line-height: 30px;
-        left: 29%;
-        top: 87%;
-    }
-
-    .td7{
-        position: absolute;
-        line-height: 30px;
-        left: 52%;
-        top: 87%;
-    }
-
-    .td8{
-        position: absolute;
-        line-height: 30px;
-        left: 75%;
-        top: 87%;
-    }
+    
 
     footer{
       display: flex;
