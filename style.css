@@ -52,6 +52,9 @@ img,picture {
     font-family: var(--fontfam1);
     font-size: .9em;
     font-weight: 400;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 7px;
     text-decoration: none;
 }
 
@@ -87,8 +90,9 @@ p{
     font-weight: 400;
 }
 
-.leader_int_vr p{
-    line-height: 30px;
+ p{
+    line-height: 1.2;
+    
 }
 
 
@@ -126,8 +130,37 @@ footer{
     background-color: var(--black);
 }
 
+.icon{
+    cursor: pointer;
+    padding-bottom: 7px;
+    position: relative;
+}
+
 small{
     color: var(--white);
+}
+
+
+a::after,.icon::after {
+    content: "";
+    position: absolute;
+    width: 40%;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(90deg, white, white); 
+    background-size: 0 2px;
+    background-repeat: no-repeat;
+    background-position: left bottom; 
+    transition: background-size .3s ease-in;
+    
+}
+
+
+
+a:hover::after ,.icon:hover::after{
+    background-size: 100% 3px;
+    
 }
 
 
@@ -147,6 +180,15 @@ small{
 
 
 @media screen and (max-width: 48em){
+
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
     .toggle{
         border: 0;
         background-image: url('/images/icon-hamburger.svg');
@@ -156,13 +198,14 @@ small{
         width: 40px;
         position: absolute;
         left: 90%;
-        top: 5%;
+        top: -2%;
         z-index: 999;
     }
 
     .logo_con{
         padding-top: 10px;
         position: relative;
+        top: 10%;
         z-index: 999;
     }
 
@@ -177,8 +220,8 @@ small{
         background-image:url('/images/mobile/image-hero.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
-        
+        background-position: center center;
+       
         
     }
 
@@ -240,6 +283,7 @@ small{
     
    .img{
     padding: 0 10px;
+   
    }
 
    .leader_int_vr{
@@ -377,41 +421,69 @@ small{
 
 
     section{
-        max-width: 1400px;
+        border: 1px solid;
+        max-height: 100%;
+       
+        /* max-width: 1400px; */
         position: relative;
     }
 
 
     .image_interactive{
-        margin: 80px;
-        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 0;
+        max-width: 95%;
+        max-height: 100%;
        
     }
+
+    .img{
+        width: 60%;
+    }
+
+
 
     .leader_int_vr{
-        padding:  80px 30px;
+        padding: 50px 30px;
         position: absolute;
-        left: 52%;
-        top: 45%;
+        left: 60%;
+        top: 50%;
+        width: 40%;
+        
+       
 
     }
 
-    .leader_int_vr h2{
-        font-size: 3em;
+    .p{
+        padding: 20px;
+        width: 100%;
+    }
+
+    .p h2{
+        font-size: 2em;
         font-weight: 400;
        
 
     }
 
-    .leader_int_vr p{
+    .p p{
         font-size: 1em;
         font-weight: 400;
-        padding-top: 40px;
+        /* padding-top: 40px; */
+    }
+    
+    .list__of__card{
+        border: 1px solid;
+        padding: 100px 0;
+        position: relative;
     }
 
-
     .h11{
-        padding: 20px;
+        padding-left: 40px;
+    
     }
     
 
@@ -419,22 +491,23 @@ small{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         place-items: center;
+        gap: 20px;
         position: relative;
         padding: 40px 0;
         border: 1px solid;
-        width: 1300px;
+        
     }
 
     button{
-        padding: 8px 30px;
+        
+        letter-spacing: 1px;
+        /* padding: 10px 20px; */
         position: absolute;
         top: -5%;
         left: 90%;
     }
 
-    .list__of__card{
-        padding: 100px 0;
-    }
+    
 
 
 
